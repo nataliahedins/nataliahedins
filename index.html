@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loftslagsbreytingar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+
+      <!-- Left: brand name links home -->
+      <a href="index.html" class="text-xl font-bold text-emerald-700 tracking-tight">Loftslagsbreytingar</a>
+
+      <!-- Right: desktop nav links / mobile hamburger -->
+      <div class="flex items-center">
+        <ul class="hidden md:flex items-center space-x-8 font-medium text-gray-600">
+          <li><a href="bradnun-jokla.html" class="hover:text-emerald-600 transition-colors duration-200">Bráðnun Jökla</a></li>
+          <li><a href="dyralif.html" class="hover:text-emerald-600 transition-colors duration-200">Dýralíf</a></li>
+          <li><a href="mannlif.html" class="hover:text-emerald-600 transition-colors duration-200">Mannlíf</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none" aria-label="Toggle menu">
+          <svg id="icon-open" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col space-y-4 pt-4 font-medium text-gray-600">
+        <li><a href="bradnun-jokla.html" class="block hover:text-emerald-600 transition-colors duration-200">Bráðnun Jökla</a></li>
+        <li><a href="dyralif.html" class="block hover:text-emerald-600 transition-colors duration-200">Dýralíf</a></li>
+        <li><a href="mannlif.html" class="block hover:text-emerald-600 transition-colors duration-200">Mannlíf</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-[40vh] flex items-center justify-center text-center overflow-hidden">
+    <img
+      src="img/AdobeStock_30041061.jpg"
+      alt="Wildfire — climate change"
+      class="absolute inset-0 w-full h-full object-cover object-top lg:object-[center_30%]"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20"></div>
+    <div class="relative z-10 px-6 max-w-3xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-lg">
+        Loftslagsbreytingar
+      </h1>
+      <p class="mt-6 text-lg md:text-2xl text-gray-200 leading-relaxed">
+        Við erum eina kynslóðin sem hefur fundið fyrir áhrifum loftslagsbreytinga og við erum eina kynslóðin sem getum gert eitthvað í því.
+      </p>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section id="efni" class="max-w-6xl mx-auto px-6 py-12 lg:py-20">
+    <p class="text-center text-gray-700 text-lg mb-10 max-w-xl mx-auto">Veldu eitt af þremur svæðum til að kanna hvernig loftslagsbreytingar snerta okkur.</p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- Card: Bráðnun Jökla -->
+      <a href="bradnun-jokla.html" class="group relative h-64 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img src="img/IMG_6933.JPG" alt="Glacier" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+        <div class="absolute inset-0 bg-black/45 group-hover:bg-black/55 transition-colors duration-300"></div>
+        <div class="relative h-full flex flex-col justify-end p-6">
+          <h3 class="text-xl font-bold text-white mb-1">Bráðnun Jökla</h3>
+          <p class="text-gray-200 text-sm leading-relaxed">Hækkandi hitastig valda því að bráðnun jökla verður meiri. Þetta hefur víðtækar afleiðingar, frá hækkandi sjávarborði til breytinga á vistkerfum.</p>
+          <span class="mt-3 text-emerald-300 font-semibold text-sm group-hover:underline">Lesa meira →</span>
+        </div>
+      </a>
+
+      <!-- Card: Dýralíf -->
+      <a href="dyralif.html" class="group relative h-64 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img src="img/dyyr.jpg" alt="Wildlife" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+        <div class="absolute inset-0 bg-black/45 group-hover:bg-black/55 transition-colors duration-300"></div>
+        <div class="relative h-full flex flex-col justify-end p-6">
+          <h3 class="text-xl font-bold text-white mb-1">Dýralíf</h3>
+          <p class="text-gray-200 text-sm leading-relaxed">Loftslagsbreytingar hafa víðtæk áhrif á búsvæði og fæðukeðjur dýra um allan heim.</p>
+          <span class="mt-3 text-emerald-300 font-semibold text-sm group-hover:underline">Lesa meira →</span>
+        </div>
+      </a>
+
+      <!-- Card: Mannlíf -->
+      <a href="mannlif.html" class="group relative h-64 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img src="img/mannlif.jpg" alt="Human life and communities" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+        <div class="absolute inset-0 bg-black/45 group-hover:bg-black/55 transition-colors duration-300"></div>
+        <div class="relative h-full flex flex-col justify-end p-6">
+          <h3 class="text-xl font-bold text-white mb-1">Mannlíf</h3>
+          <p class="text-gray-200 text-sm leading-relaxed">Loftslagsbreytingar hafa víðtæk áhrif á daglegt líf fólks, sem í sumum tilellum neyðist fólk til að flytja búferlum.</p>
+          <span class="mt-3 text-emerald-300 font-semibold text-sm group-hover:underline">Lesa meira →</span>
+        </div>
+      </a
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center py-8 text-sm">
+    <p>Loftslagsbreytingar · Natalía Héðinsdóttir · 2026</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+
+    btn.addEventListener('click', () => {
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', isOpen);
+      iconOpen.classList.toggle('hidden', !isOpen);
+      iconClose.classList.toggle('hidden', isOpen);
+    });
+  </script>
+
+</body>
+</html>

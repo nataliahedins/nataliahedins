@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bráðnun Jökla — Loftslagsbreytingar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+
+      <!-- Left: brand name links home -->
+      <a href="index.html" class="text-xl font-bold text-emerald-700 tracking-tight">Loftslagsbreytingar</a>
+
+      <!-- Right: desktop nav links / mobile hamburger -->
+      <div class="flex items-center">
+        <ul class="hidden md:flex items-center space-x-8 font-medium text-gray-600">
+          <li><a href="bradnun-jokla.html" class="text-emerald-600 font-semibold border-b-2 border-emerald-600 pb-0.5">Bráðnun Jökla</a></li>
+          <li><a href="dyralif.html" class="hover:text-emerald-600 transition-colors duration-200">Dýralíf</a></li>
+          <li><a href="mannlif.html" class="hover:text-emerald-600 transition-colors duration-200">Mannlíf</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none" aria-label="Toggle menu">
+          <svg id="icon-open" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col space-y-4 pt-4 font-medium text-gray-600">
+        <li><a href="bradnun-jokla.html" class="block text-emerald-600 font-semibold">Bráðnun Jökla</a></li>
+        <li><a href="dyralif.html" class="block hover:text-emerald-600 transition-colors duration-200">Dýralíf</a></li>
+        <li><a href="mannlif.html" class="block hover:text-emerald-600 transition-colors duration-200">Mannlíf</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="relative h-80 md:h-96 flex items-end overflow-hidden mt-0">
+    <img
+      src="img/IMG_6933.JPG"
+      alt="Melting glacier"
+      class="absolute inset-0 w-full h-full object-cover object-[center_15%]"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+    <div class="relative z-10 px-8 pb-10 max-w-4xl">
+      <p class="text-emerald-400 font-semibold uppercase tracking-widest text-sm mb-2">Loftslagsbreytingar</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">Bráðnun Jökla</h1>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+      Bráðnun jökla er eitt skýrasta merki þess að loftslag jarðar er að breytast. Jöklar myndast þegar snjór safnast upp yfir langan tíma og þjappast saman í ís. Venjulega er jafnvægi á milli þess sem bætist við jökulinn og þess sem bráðnar, en þegar hitastig hækkar raskast þetta jafnvægi og bráðnun verður meiri en uppsöfnun, sem veldur því að jöklar dragast saman.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-6">
+      Ein helsta orsök bráðnun jökla er aukning losun gróðurhúsalofttegunda, svo sem koltvísýrings. Þessar lofttegundir halda inni hita í andrúmsloftinu og leiða til hækkunnar í meðalhita. Á norðlægum slóðum, þar á meðal á Íslandi, eru áhrifin sérstaklega áberandi þar sem jöklar bregðast hratt við hitabreytingum.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-6">
+      Afleiðingar bráðnun jökla eru víðtækar og hafa bæði staðbundin og hnattræn áhrif. Þegar jöklar bráðna hækkar sjávarborð, sem getur ógnað byggð á láglendi víða um heim. Þá hefur bráðnun einnig áhrif á vistkerfi, þar sem margar lífverur eru háðar köldum og stöðugum aðstæðum jökla. Á Íslandi getur þessi þróun haft áhrif á vatnsbúskap landsins, auk þess sem hún snertir orkuframleiðslu þar sem jökulár eru mikilvægur þáttur í raforkuvinnslu.
+    </p>
+    <p class="text-gray-600 leading-relaxed">
+      Til framtíðar litið er ljóst að ef ekki tekst að draga úr losun gróðurhúsalofttegunda mun bráðnun jökla halda áfram og jafnvel aukast. Því er brýnt að grípa til aðgerða á heimsvísu til að takmarka loftslagsbreytingar og vernda þessi mikilvægu náttúrufyrirbæri.
+    </p>
+
+    <div class="mt-12">
+      <a href="index.html" class="inline-flex items-center text-emerald-600 font-semibold hover:underline">
+        ← Til baka á forsíðu
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center py-8 text-sm">
+    <p>Loftslagsbreytingar · Natalía Héðinsdóttir · 2026</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    btn.addEventListener('click', () => {
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', isOpen);
+      iconOpen.classList.toggle('hidden', !isOpen);
+      iconClose.classList.toggle('hidden', isOpen);
+    });
+  </script>
+
+</body>
+</html>

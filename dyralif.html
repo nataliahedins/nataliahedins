@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dýralíf — Loftslagsbreytingar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+
+      <!-- Left: brand name links home -->
+      <a href="index.html" class="text-xl font-bold text-emerald-700 tracking-tight">Loftslagsbreytingar</a>
+
+      <!-- Right: desktop nav links / mobile hamburger -->
+      <div class="flex items-center">
+        <ul class="hidden md:flex items-center space-x-8 font-medium text-gray-600">
+          <li><a href="bradnun-jokla.html" class="hover:text-emerald-600 transition-colors duration-200">Bráðnun Jökla</a></li>
+          <li><a href="dyralif.html" class="text-emerald-600 font-semibold border-b-2 border-emerald-600 pb-0.5">Dýralíf</a></li>
+          <li><a href="mannlif.html" class="hover:text-emerald-600 transition-colors duration-200">Mannlíf</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none" aria-label="Toggle menu">
+          <svg id="icon-open" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col space-y-4 pt-4 font-medium text-gray-600">
+        <li><a href="bradnun-jokla.html" class="block hover:text-emerald-600 transition-colors duration-200">Bráðnun Jökla</a></li>
+        <li><a href="dyralif.html" class="block text-emerald-600 font-semibold">Dýralíf</a></li>
+        <li><a href="mannlif.html" class="block hover:text-emerald-600 transition-colors duration-200">Mannlíf</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="relative h-80 md:h-96 flex items-end overflow-hidden mt-0">
+    <img
+      src="img/dyyr.jpg"
+      alt="Wildlife — arctic fox"
+      class="absolute inset-0 w-full h-full object-cover object-[center_40%]"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+    <div class="relative z-10 px-8 pb-10 max-w-4xl">
+      <p class="text-emerald-400 font-semibold uppercase tracking-widest text-sm mb-2">Loftslagsbreytingar</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">Dýralíf</h1>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+      Loftslagsbreytingar hafa mikil áhrif á dýralíf og raska jafnvægi vistkerfa víða um heim. Með hækkandi meðalhita, breytingum á úrkomu og bráðnun íss breytast búsvæði margra dýrategunda og þær þurfa að aðlagast nýjum aðstæðum eða flytjast á önnur svæði til að lifa af.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-6">
+      Ein helsta afleiðingin er tap á búsvæðum. Dýr sem eru háð köldu loftslagi, til dæmis á norðurslóðum, eiga sífellt erfiðara með að finna hentug búsvæði þegar ís og snjór minnkar. Þetta getur leitt til fækkunar tegunda og í sumum tilfellum útrýmingar staðbundinna stofna.
+    </p>
+    <p class="text-gray-600 leading-relaxed mb-6">
+      Auk þess hefur breyting á hitastigi og árstíðum áhrif á fæðukeðjur. Þegar plöntur og smádýr breytast eða færast til getur það haft keðjuverkandi áhrif á stærri dýr sem treysta á þau sem fæðu. Þetta getur raskað jafnvægi vistkerfa og haft áhrif á líffræðilega fjölbreytni.
+    </p>
+    <p class="text-gray-600 leading-relaxed">
+      Auk þess verða öfgakennd veðuraðstæður eins og hitabylgjur, stormar og þurrkar sífellt algengari. Slíkir atburðir geta haft alvarleg áhrif á dýralíf og vistkerfi, til dæmis með því að eyða búsvæðum eða takmarka aðgengi að fæðu.
+    </p>
+
+    <div class="mt-12">
+      <a href="index.html" class="inline-flex items-center text-emerald-600 font-semibold hover:underline">
+        ← Til baka á forsíðu
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center py-8 text-sm">
+    <p>Loftslagsbreytingar · Natalía Héðinsdóttir · 2026</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    btn.addEventListener('click', () => {
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', isOpen);
+      iconOpen.classList.toggle('hidden', !isOpen);
+      iconClose.classList.toggle('hidden', isOpen);
+    });
+  </script>
+
+</body>
+</html>
